@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OpenVK)))
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://vk.com/*
@@ -21,6 +21,6 @@ if (window.location.href.includes('https://vk.com/settings?act=openvk')) {
     var page = document.querySelector('.wide_column_wrap');
         page.innerHTML = `
  <iframe src="https://openvk.uk/" width="550" height="600"">
-    иди нахуй. я не хочу с тобой работать
+    я не хочу с тобой работать.
  </iframe>`
     }
